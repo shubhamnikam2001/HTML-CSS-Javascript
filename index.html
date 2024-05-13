@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Website!</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>HTML</h2>
+      <p>What is HTML?
+  HTML stands for Hypertext Markup Language. It is the standard markup language used for creating the structure and presentation of web pages. HTML uses tags to define the elements within a webpage, such as headings, paragraphs, links, images, and tables. It provides a way to format and organize the content on a webpage and is fundamental to web development.
+      </p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>CSS</h2>
+      <p>Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.      
+      </p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>JavaScript</h2>
+      <p>JavaScript is the world's most popular programming language.
+        JavaScript is the programming language of the Web.
+        JavaScript is easy to learn.
+        This tutorial will teach you JavaScript from basic to advanced</p>
+    </div>
+  </div>
+  
+  <button id="changeColorBtn"onclick="myFunc()">Change Header Color</button>
+  
+  
+  <script>
+    let result = document.getElementById("changeColorBtn");
+
+    function changeColor(color) {
+        document.body.style.background = color;
+    }
+
+    function myFunc() {
+        changeColor('yellow');
+        result.innerHTML = "Background Color changed";
+    }        
+</script>
+</body>
+</html>
